@@ -18,411 +18,28 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '4482133605395562');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4482133605395562&ev=PageView&noscript=1"
-/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4482133605395562&ev=PageView&noscript=1" /></noscript>
 <!-- End Meta Pixel Code -->
 <style>
-:root{
-  --bg:#020807;
-  --card:rgba(255,255,255,.06);
-  --card2:rgba(255,255,255,.025);
-  --line:rgba(214,255,239,.14);
-  --line2:rgba(56,242,190,.38);
-  --txt:#f4fff9;
-  --muted:#a4bdb3;
-  --muted2:#6f887e;
-  --teal:#38f2be;
-  --teal2:#0fae8b;
-  --amber:#f4b35d;
-  --shadow:0 28px 90px rgba(0,0,0,.52);
-  --r:30px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  min-height:100vh;
-  font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
-  background:
-    radial-gradient(circle at 14% 10%,rgba(56,242,190,.22),transparent 30%),
-    radial-gradient(circle at 86% 8%,rgba(244,179,93,.12),transparent 26%),
-    radial-gradient(circle at 50% 100%,rgba(15,174,139,.14),transparent 44%),
-    var(--bg);
-  color:var(--txt);
-  overflow-x:hidden;
-}
-body:before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
-  background-size:54px 54px;
-  mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 82%);
-  pointer-events:none;
-}
-body:after{
-  content:"";
-  position:fixed;
-  inset:auto -18vw -28vw auto;
-  width:56vw;
-  height:56vw;
-  border-radius:999px;
-  background:radial-gradient(circle,rgba(56,242,190,.13),transparent 64%);
-  pointer-events:none;
-}
-.wrap{
-  position:relative;
-  z-index:1;
-  width:min(1160px,calc(100% - 40px));
-  margin:0 auto;
-  padding:clamp(18px,3vw,32px) 0 clamp(44px,6vw,72px);
-}
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-  margin-bottom:clamp(22px,4vw,44px);
-}
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  font-weight:900;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-}
-.mark{
-  width:38px;
-  height:38px;
-  border-radius:14px;
-  background:linear-gradient(135deg,var(--teal),#eafff7);
-  box-shadow:0 0 34px rgba(56,242,190,.34);
-}
-.pill{
-  border:1px solid var(--line);
-  padding:10px 14px;
-  border-radius:999px;
-  color:var(--muted);
-  background:rgba(255,255,255,.04);
-  font-size:13px;
-  text-align:center;
-}
-.grid{
-  display:grid;
-  grid-template-columns:minmax(0,1.03fr) minmax(380px,.97fr);
-  gap:clamp(18px,2.8vw,30px);
-  align-items:stretch;
-}
-.card{
-  border:1px solid var(--line);
-  background:linear-gradient(180deg,var(--card),var(--card2));
-  box-shadow:var(--shadow);
-  border-radius:var(--r);
-  padding:clamp(22px,3.3vw,38px);
-  backdrop-filter:blur(14px);
-}
-.hero{
-  position:relative;
-  overflow:hidden;
-  isolation:isolate;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  min-height:100%;
-}
-.hero:after{
-  content:"";
-  position:absolute;
-  right:-90px;
-  bottom:-110px;
-  width:270px;
-  height:270px;
-  border:1px solid rgba(56,242,190,.18);
-  border-radius:999px;
-  background:radial-gradient(circle,rgba(56,242,190,.10),transparent 64%);
-  z-index:-1;
-}
-.hero h1{
-  font-size:clamp(42px,6vw,78px);
-  line-height:.92;
-  margin:0 0 18px;
-  letter-spacing:-.075em;
-  text-wrap:balance;
-}
-.hero h1 span{
-  color:var(--teal);
-  text-shadow:0 0 36px rgba(56,242,190,.24);
-}
-.hero p{
-  max-width:62ch;
-  font-size:clamp(16px,1.55vw,19px);
-  line-height:1.62;
-  color:var(--muted);
-  margin:0 0 24px;
-}
-.mini{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:12px;
-  margin-top:24px;
-}
-.mini div{
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:15px;
-  background:rgba(0,0,0,.18);
-}
-.mini b{
-  display:block;
-  color:#fff;
-  font-size:clamp(20px,2vw,24px);
-  line-height:1.05;
-  overflow-wrap:anywhere;
-}
-.mini small{
-  display:block;
-  color:var(--muted);
-  line-height:1.35;
-  margin-top:4px;
-}
-.panel h2{
-  font-size:clamp(25px,3vw,32px);
-  line-height:1.08;
-  letter-spacing:-.045em;
-  margin:0 0 10px;
-  text-wrap:balance;
-}
-.panel p{color:var(--muted);line-height:1.58}
-.bar{
-  height:9px;
-  background:rgba(255,255,255,.08);
-  border-radius:99px;
-  overflow:hidden;
-  margin:20px 0 22px;
-}
-.fill{
-  height:100%;
-  width:0;
-  background:linear-gradient(90deg,var(--teal2),var(--teal));
-  transition:.35s ease;
-}
-.qtag{
-  color:var(--teal);
-  font-weight:900;
-  font-size:12px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-}
-.qtitle{
-  font-size:clamp(24px,3vw,30px);
-  line-height:1.12;
-  letter-spacing:-.045em;
-  margin:9px 0 18px;
-  text-wrap:balance;
-}
-.opts{
-  display:grid;
-  gap:10px;
-}
-.opt{
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:14px 15px;
-  cursor:pointer;
-  background:rgba(255,255,255,.038);
-  color:#eafff7;
-  line-height:1.35;
-  transition:.18s ease;
-  -webkit-tap-highlight-color:transparent;
-}
-.opt:hover{
-  border-color:var(--line2);
-  transform:translateY(-1px);
-  background:rgba(56,242,190,.075);
-}
-.opt.sel{
-  border-color:var(--teal);
-  background:rgba(56,242,190,.13);
-  box-shadow:0 0 0 3px rgba(56,242,190,.06);
-}
-.edu{
-  margin-top:18px;
-  border-left:3px solid var(--teal);
-  padding:13px 14px;
-  background:rgba(56,242,190,.075);
-  border-radius:14px;
-  color:#d7fff2;
-  line-height:1.55;
-  display:none;
-}
-.actions{
-  display:flex;
-  gap:12px;
-  justify-content:space-between;
-  align-items:center;
-  margin-top:22px;
-}
-.btn{
-  min-height:48px;
-  border:0;
-  border-radius:999px;
-  padding:14px 19px;
-  font-weight:900;
-  cursor:pointer;
-  text-decoration:none;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  transition:.18s ease;
-  white-space:normal;
-  text-align:center;
-}
-.btn:hover{transform:translateY(-1px)}
-.primary{
-  background:linear-gradient(135deg,var(--teal),#dffff4);
-  color:#03100d;
-  box-shadow:0 12px 36px rgba(56,242,190,.16);
-}
-.secondary{
-  background:rgba(255,255,255,.08);
-  color:#fff;
-  border:1px solid var(--line);
-}
-.btn:disabled{
-  opacity:.42;
-  cursor:not-allowed;
-  transform:none;
-}
-.hidden{display:none!important}
-.leadform{
-  display:grid;
-  gap:12px;
-  margin-top:18px;
-}
-.input{
-  width:100%;
-  border:1px solid var(--line);
-  background:rgba(0,0,0,.24);
-  color:#fff;
-  border-radius:16px;
-  padding:15px 14px;
-  font-size:16px;
-  outline:0;
-}
-.input:focus{
-  border-color:var(--teal);
-  box-shadow:0 0 0 3px rgba(56,242,190,.07);
-}
-.result{display:none}
-.result-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:18px;
-}
-.box{
-  border:1px solid var(--line);
-  border-radius:24px;
-  padding:clamp(18px,2.4vw,22px);
-  background:rgba(0,0,0,.18);
-}
-.box h3{
-  margin:0 0 8px;
-  font-size:clamp(19px,2vw,22px);
-  letter-spacing:-.02em;
-}
-.box p,.box li{
-  color:var(--muted);
-  line-height:1.55;
-}
-.video{
-  aspect-ratio:16/9;
-  border:1px solid var(--line2);
-  border-radius:22px;
-  display:grid;
-  place-items:center;
-  text-align:center;
-  color:var(--muted);
-  background:rgba(0,0,0,.24);
-  overflow:hidden;
-  min-height:190px;
-}
-.video iframe{
-  width:100%;
-  height:100%;
-  border:0;
-  display:none;
-}
-.check{
-  display:grid;
-  gap:10px;
-  margin:14px 0 0;
-}
-.check div{
-  padding:13px;
-  border-radius:15px;
-  background:rgba(255,255,255,.045);
-  border:1px solid var(--line);
-}
-.foot{
-  margin-top:22px;
-  color:var(--muted2);
-  font-size:13px;
-  line-height:1.5;
-}
-a:focus-visible,button:focus-visible,.opt:focus-visible,input:focus-visible{
-  outline:2px solid var(--teal);
-  outline-offset:3px;
-}
-@media(max-width:980px){
-  .grid,.result-grid{grid-template-columns:1fr}
-  .hero{min-height:auto}
-  .mini{grid-template-columns:repeat(3,minmax(0,1fr))}
-}
-@media(max-width:680px){
-  .wrap{width:min(100% - 28px,1160px);padding:18px 0 48px}
-  .nav{align-items:flex-start;flex-direction:column;margin-bottom:20px}
-  .pill{width:100%;border-radius:18px;text-align:left}
-  .card{border-radius:24px;padding:22px}
-  .hero h1{font-size:clamp(36px,11.6vw,46px);line-height:.98;letter-spacing:-.062em}
-  .hero p{font-size:16px}
-  .mini{grid-template-columns:1fr;gap:10px}
-  .mini div{padding:14px;border-radius:18px}
-  .actions{position:sticky;bottom:10px;z-index:3;background:rgba(2,8,7,.72);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:22px;padding:10px}
-  .actions .btn{flex:1;padding-inline:12px}
-  .btn{width:100%}
-  .qtitle{font-size:25px}
-  .opt{padding:14px;border-radius:16px}
-  .video{min-height:auto}
-  .box{border-radius:22px}
-}
-@media(max-width:380px){
-  .wrap{width:min(100% - 20px,1160px)}
-  .card{padding:18px;border-radius:22px}
-  .hero h1{font-size:34px}
-  .actions{gap:8px;padding:8px}
-  .actions .btn{font-size:14px}
-}
+:root{--bg:#020807;--card:rgba(255,255,255,.06);--card2:rgba(255,255,255,.025);--line:rgba(214,255,239,.14);--line2:rgba(56,242,190,.38);--txt:#f4fff9;--muted:#a4bdb3;--muted2:#6f887e;--teal:#38f2be;--teal2:#0fae8b;--amber:#f4b35d;--danger:#ff6b6b;--shadow:0 28px 90px rgba(0,0,0,.52);--r:30px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 14% 10%,rgba(56,242,190,.22),transparent 30%),radial-gradient(circle at 86% 8%,rgba(244,179,93,.12),transparent 26%),radial-gradient(circle at 50% 100%,rgba(15,174,139,.14),transparent 44%),var(--bg);color:var(--txt);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 82%);pointer-events:none}.wrap{position:relative;z-index:1;width:min(1160px,calc(100% - 40px));margin:0 auto;padding:clamp(18px,3vw,32px) 0 clamp(44px,6vw,72px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:clamp(22px,4vw,44px)}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.mark{width:38px;height:38px;border-radius:14px;background:linear-gradient(135deg,var(--teal),#eafff7);box-shadow:0 0 34px rgba(56,242,190,.34)}.pill{border:1px solid var(--line);padding:10px 14px;border-radius:999px;color:var(--muted);background:rgba(255,255,255,.04);font-size:13px;text-align:center}
+.grid{display:grid;grid-template-columns:minmax(0,1.03fr) minmax(380px,.97fr);gap:clamp(18px,2.8vw,30px);align-items:stretch}.card{border:1px solid var(--line);background:linear-gradient(180deg,var(--card),var(--card2));box-shadow:var(--shadow);border-radius:var(--r);padding:clamp(22px,3.3vw,38px);backdrop-filter:blur(14px)}.hero{position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;min-height:100%}.hero:after{content:"";position:absolute;right:-90px;bottom:-110px;width:270px;height:270px;border:1px solid rgba(56,242,190,.18);border-radius:999px;background:radial-gradient(circle,rgba(56,242,190,.10),transparent 64%);z-index:-1}.hero h1{font-size:clamp(42px,6vw,78px);line-height:.92;margin:0 0 18px;letter-spacing:-.075em;text-wrap:balance}.hero h1 span{color:var(--teal);text-shadow:0 0 36px rgba(56,242,190,.24)}.hero p{max-width:62ch;font-size:clamp(16px,1.55vw,19px);line-height:1.62;color:var(--muted);margin:0 0 24px}
+.mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}.mini div{border:1px solid var(--line);border-radius:20px;padding:15px;background:rgba(0,0,0,.18)}.mini b{display:block;color:#fff;font-size:clamp(20px,2vw,24px);line-height:1.05;overflow-wrap:anywhere}.mini small{display:block;color:var(--muted);line-height:1.35;margin-top:4px}.panel h2{font-size:clamp(25px,3vw,32px);line-height:1.08;letter-spacing:-.045em;margin:0 0 10px;text-wrap:balance}.panel p{color:var(--muted);line-height:1.58}.bar{height:9px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;margin:20px 0 22px}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--teal2),var(--teal));transition:.35s ease}.qtag{color:var(--teal);font-weight:900;font-size:12px;letter-spacing:.14em;text-transform:uppercase}.qtitle{font-size:clamp(24px,3vw,30px);line-height:1.12;letter-spacing:-.045em;margin:9px 0 18px;text-wrap:balance}.opts{display:grid;gap:10px}.opt{border:1px solid var(--line);border-radius:18px;padding:14px 15px;cursor:pointer;background:rgba(255,255,255,.038);color:#eafff7;line-height:1.35;transition:.18s ease;-webkit-tap-highlight-color:transparent}.opt:hover{border-color:var(--line2);transform:translateY(-1px);background:rgba(56,242,190,.075)}.opt.sel{border-color:var(--teal);background:rgba(56,242,190,.13);box-shadow:0 0 0 3px rgba(56,242,190,.06)}.edu{margin-top:18px;border-left:3px solid var(--teal);padding:13px 14px;background:rgba(56,242,190,.075);border-radius:14px;color:#d7fff2;line-height:1.55;display:none}.actions{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-top:22px}.btn{min-height:48px;border:0;border-radius:999px;padding:14px 19px;font-weight:900;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.18s ease;white-space:normal;text-align:center}.btn:hover{transform:translateY(-1px)}.primary{background:linear-gradient(135deg,var(--teal),#dffff4);color:#03100d;box-shadow:0 12px 36px rgba(56,242,190,.16)}.secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid var(--line)}.btn:disabled{opacity:.42;cursor:not-allowed;transform:none}.hidden{display:none!important}.leadform{display:grid;gap:12px;margin-top:18px}.input{width:100%;border:1px solid var(--line);background:rgba(0,0,0,.24);color:#fff;border-radius:16px;padding:15px 14px;font-size:16px;outline:0}.input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(56,242,190,.07)}.input.invalid{border-color:var(--danger);box-shadow:0 0 0 3px rgba(255,107,107,.12)}.hint{margin-top:-4px;color:var(--muted2);font-size:13px;line-height:1.35}.field-error{display:none;margin-top:-4px;color:#ffd1d1;font-size:13px;line-height:1.35}.field-error.show{display:block}.result{display:none}.result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.box{border:1px solid var(--line);border-radius:24px;padding:clamp(18px,2.4vw,22px);background:rgba(0,0,0,.18)}.box h3{margin:0 0 8px;font-size:clamp(19px,2vw,22px);letter-spacing:-.02em}.box p,.box li{color:var(--muted);line-height:1.55}.video{aspect-ratio:16/9;border:1px solid var(--line2);border-radius:22px;display:grid;place-items:center;text-align:center;color:var(--muted);background:rgba(0,0,0,.24);overflow:hidden;min-height:190px}.video iframe{width:100%;height:100%;border:0;display:none}.check{display:grid;gap:10px;margin:14px 0 0}.check div{padding:13px;border-radius:15px;background:rgba(255,255,255,.045);border:1px solid var(--line)}.foot{margin-top:22px;color:var(--muted2);font-size:13px;line-height:1.5}a:focus-visible,button:focus-visible,.opt:focus-visible,input:focus-visible{outline:2px solid var(--teal);outline-offset:3px}@media(max-width:980px){.grid,.result-grid{grid-template-columns:1fr}.hero{min-height:auto}.mini{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:680px){.wrap{width:min(100% - 28px,1160px);padding:18px 0 48px}.nav{align-items:flex-start;flex-direction:column;margin-bottom:20px}.pill{width:100%;border-radius:18px;text-align:left}.card{border-radius:24px;padding:22px}.hero h1{font-size:clamp(36px,11.6vw,46px);line-height:.98;letter-spacing:-.062em}.hero p{font-size:16px}.mini{grid-template-columns:1fr;gap:10px}.mini div{padding:14px;border-radius:18px}.actions{position:sticky;bottom:10px;z-index:3;background:rgba(2,8,7,.72);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:22px;padding:10px}.actions .btn{flex:1;padding-inline:12px}.btn{width:100%}.qtitle{font-size:25px}.opt{padding:14px;border-radius:16px}.video{min-height:auto}.box{border-radius:22px}}@media(max-width:380px){.wrap{width:min(100% - 20px,1160px)}.card{padding:18px;border-radius:22px}.hero h1{font-size:34px}.actions{gap:8px;padding:8px}.actions .btn{font-size:14px}}
 </style>
 </head>
 <body>
 <main class="wrap">
 <header class="nav"><div class="brand"><div class="mark"></div><div>CEVORA</div></div><div class="pill">Diagnóstico interativo · 10 perguntas · PDF gratuito</div></header>
-<section id="intro" class="grid">
-<div class="card hero"><h1>Sua clínica tem um sistema de pacientes ou só <span>tentativas soltas</span> de marketing?</h1><p>Responda 10 perguntas rápidas para descobrir onde sua aquisição está vazando: atenção, confiança, explicação, WhatsApp ou conversão.</p><a class="btn primary" href="#quiz">Começar diagnóstico</a><div class="mini"><div><b>10</b><small>perguntas diretas, sem enrolação.</small></div><div><b>PDF</b><small>material explicativo liberado no final.</small></div><div><b>VSL</b><small>vídeo de instrução antes do PDF.</small></div></div></div>
-<div id="quiz" class="card panel"><div class="qtag" id="tag">Pergunta 1 de 10</div><div class="bar"><div class="fill" id="fill"></div></div><h2 id="qt" class="qtitle"></h2><div class="opts" id="opts"></div><div class="edu" id="edu"></div><div class="actions"><button id="back" class="btn secondary">Voltar</button><button id="next" class="btn primary" disabled>Continuar</button></div></div>
-</section>
-<section id="lead" class="card panel hidden"><div class="qtag">Último passo</div><h2>Para liberar o PDF e gerar seu diagnóstico, preencha seus dados.</h2><p>Essas informações entram no resumo final e na mensagem pronta do WhatsApp, caso você queira pedir uma avaliação rápida da sua jornada de pacientes.</p><form id="leadForm" class="leadform"><input class="input" id="nome" placeholder="Seu nome" required><input class="input" id="whats" placeholder="WhatsApp da clínica ou pessoal" required><input class="input" id="esp" placeholder="Especialidade ou área principal" required><input class="input" id="cidade" placeholder="Cidade/UF" required><button id="submitLead" class="btn primary" type="submit">Liberar diagnóstico e PDF</button></form></section>
+<section id="intro" class="grid"><div class="card hero"><h1>Sua clínica tem um sistema de pacientes ou só <span>tentativas soltas</span> de marketing?</h1><p>Responda 10 perguntas rápidas para descobrir onde sua aquisição está vazando: atenção, confiança, explicação, WhatsApp ou conversão.</p><a class="btn primary" href="#quiz">Começar diagnóstico</a><div class="mini"><div><b>10</b><small>perguntas diretas, sem enrolação.</small></div><div><b>PDF</b><small>material explicativo liberado no final.</small></div><div><b>VSL</b><small>vídeo de instrução antes do PDF.</small></div></div></div><div id="quiz" class="card panel"><div class="qtag" id="tag">Pergunta 1 de 10</div><div class="bar"><div class="fill" id="fill"></div></div><h2 id="qt" class="qtitle"></h2><div class="opts" id="opts"></div><div class="edu" id="edu"></div><div class="actions"><button id="back" class="btn secondary">Voltar</button><button id="next" class="btn primary" disabled>Continuar</button></div></div></section>
+<section id="lead" class="card panel hidden"><div class="qtag">Último passo</div><h2>Para liberar o PDF e gerar seu diagnóstico, preencha seus dados.</h2><p>Essas informações entram no resumo final e na mensagem pronta do WhatsApp, caso você queira pedir uma avaliação rápida da sua jornada de pacientes.</p><form id="leadForm" class="leadform"><input class="input" id="nome" autocomplete="name" placeholder="Seu nome" required><input class="input" id="whats" type="tel" inputmode="numeric" autocomplete="tel" maxlength="15" placeholder="(45) 99999-9999" aria-describedby="whatsHint whatsError" required><div id="whatsHint" class="hint">Digite apenas números. O site formata automaticamente.</div><div id="whatsError" class="field-error">Digite um WhatsApp válido com DDD.</div><input class="input" id="esp" placeholder="Especialidade ou área principal" required><input class="input" id="cidade" placeholder="Cidade/UF" required><button id="submitLead" class="btn primary" type="submit">Liberar diagnóstico e PDF</button></form></section>
 <section id="result" class="result"><div class="card hero"><div class="qtag">Resultado do diagnóstico</div><h1 id="rt">Diagnóstico</h1><p id="rp"></p><div class="mini"><div><b id="dor">-</b><small>Dor dominante</small></div><div><b id="desejo">-</b><small>Desejo central</small></div><div><b id="gargalo">-</b><small>Gargalo provável</small></div></div></div><div class="result-grid" style="margin-top:18px"><div class="box"><h3>Assista antes de ler o PDF</h3><p>Um vídeo rápido explicando como usar o material e como pensar na jornada de aquisição da sua clínica.</p><div class="video"><iframe id="yt" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div id="placeholder"><b>Carregando vídeo explicativo</b></div></div></div><div class="box"><h3>Baixe o PDF explicativo</h3><p>Use o material para identificar os 5 vazamentos que impedem clínicas de transformar marketing em pacientes particulares.</p><a class="btn primary" href="cevora_diagnostico_aquisicao_medica.pdf" download>Baixar PDF gratuito</a><div class="check"><div>☑ Compare cada vazamento com a realidade da sua clínica.</div><div>☑ Observe se o paciente chega educado ou frio no WhatsApp.</div><div>☑ Veja se seu marketing conduz ou apenas faz a clínica aparecer.</div></div></div><div class="box"><h3>Resumo do lead</h3><p id="resumo"></p></div><div class="box"><h3>Quer uma leitura rápida do seu caso?</h3><p>Além do PDF, você pode chamar no WhatsApp para uma chamada rápida gratuita de 10 minutos. A ideia é avaliar sua clínica e oferecer alguns insights práticos.</p><a id="zap" class="btn primary" target="_blank" rel="noopener">Chamar no WhatsApp</a></div></div><p class="foot">Observação: este diagnóstico fala sobre aquisição e comunicação. Toda publicidade médica deve respeitar as normas éticas e regulatórias aplicáveis.</p></section>
 </main>
 <script>
 const WHATSAPP_NUMBER='5531973453814';
 const YOUTUBE_EMBED_URL='https://www.youtube.com/embed/39ZgfrnTtjc?controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&fs=0';
-const LEADS_ENDPOINT = '/api/leads';
+const LEADS_ENDPOINT='/api/leads';
 const qs=[
 ['Hoje, qual frase descreve melhor sua situação?',['Sou bom tecnicamente, mas poucos pacientes particulares chegam até mim.','Tenho pacientes, mas minha agenda ainda é instável.','Dependo muito de indicação.','Já investi em marketing, mas não senti impacto real na agenda.','Recebo mensagens, mas poucos contatos viram consulta.','Tenho uma clínica estruturada, mas o crescimento parece travado.'],'A falta de pacientes raramente é só falta de visibilidade. Muitas vezes, o paciente até encontra a clínica, mas não passa por uma jornada clara de confiança até o agendamento.'],
 ['O que mais te incomoda nesse cenário?',['Ver colegas menos preparados aparecendo mais.','Sentir que minha formação não está virando agenda.','Não ter previsibilidade de pacientes particulares.','Pagar marketing e não saber se aquilo volta em consulta.','Atrair pacientes que só perguntam preço.','Ter que explicar tudo do zero no WhatsApp.'],'O paciente não escolhe necessariamente o melhor médico. Ele escolhe o médico em quem conseguiu confiar primeiro. Competência técnica mantém o paciente, mas percepção de valor faz ele chegar.'],
@@ -435,80 +52,23 @@ const qs=[
 ['O que faria você desconfiar de um funil com vídeo para sua clínica?',['Parecer marketing apelativo.','Não respeitar regras éticas da medicina.','Exigir muita exposição minha.','Ser caro sem clareza de retorno.','Não funcionar para minha especialidade.','Atrair curiosos em vez de pacientes.','Não tenho desconfiança, quero entender melhor.'],'Essas preocupações são exatamente o motivo pelo qual um funil médico não pode ser copiado de mercados agressivos. Ele precisa ser adaptado para reputação, ética, confiança e decisão informada.'],
 ['Qual frase melhor resume o que você quer agora?',['Quero sair da invisibilidade e atrair mais pacientes particulares.','Quero parar de depender só de indicação.','Quero transformar marketing em consultas reais.','Quero entender onde minha clínica está perdendo pacientes.','Quero uma estrutura que eduque o paciente antes do WhatsApp.','Quero saber se um funil com VSL faz sentido para minha clínica.','Quero corrigir a frustração que tive com agência.'],'Pelas suas respostas, o problema provavelmente não é simplesmente fazer mais marketing. O ponto é entender qual parte da jornada do paciente está quebrando: descoberta, confiança, explicação, atendimento ou conversão.']
 ];
-let step=0,ans=[];const $=id=>document.getElementById(id);function render(){let q=qs[step];$('tag').textContent=`Pergunta ${step+1} de ${qs.length}`;$('fill').style.width=`${(step)/qs.length*100}%`;$('qt').textContent=q[0];$('edu').style.display='none';$('edu').textContent=q[2];$('next').disabled=!ans[step];$('back').style.visibility=step?'visible':'hidden';$('opts').innerHTML='';q[1].forEach((t,i)=>{let d=document.createElement('div');d.className='opt'+(ans[step]?.i===i?' sel':'');d.textContent=t;d.onclick=()=>{ans[step]={i,text:t};document.querySelectorAll('.opt').forEach(x=>x.classList.remove('sel'));d.classList.add('sel');$('edu').style.display='block';$('next').disabled=false};$('opts').appendChild(d)});if(ans[step])$('edu').style.display='block'}
+let step=0,ans=[];const $=id=>document.getElementById(id);
+function onlyDigits(value){return String(value||'').replace(/\D/g,'').slice(0,11)}
+function formatPhone(value){const d=onlyDigits(value);if(d.length<=2)return d;if(d.length<=6)return `(${d.slice(0,2)}) ${d.slice(2)}`;if(d.length<=10)return `(${d.slice(0,2)}) ${d.slice(2,6)}-${d.slice(6)}`;return `(${d.slice(0,2)}) ${d.slice(2,7)}-${d.slice(7)}`}
+function setPhoneError(show){$('whats').classList.toggle('invalid',show);$('whatsError').classList.toggle('show',show)}
+function isValidPhoneDigits(d){return d.length===10||d.length===11}
+function render(){let q=qs[step];$('tag').textContent=`Pergunta ${step+1} de ${qs.length}`;$('fill').style.width=`${(step)/qs.length*100}%`;$('qt').textContent=q[0];$('edu').style.display='none';$('edu').textContent=q[2];$('next').disabled=!ans[step];$('back').style.visibility=step?'visible':'hidden';$('opts').innerHTML='';q[1].forEach((t,i)=>{let d=document.createElement('div');d.className='opt'+(ans[step]?.i===i?' sel':'');d.textContent=t;d.onclick=()=>{ans[step]={i,text:t};document.querySelectorAll('.opt').forEach(x=>x.classList.remove('sel'));d.classList.add('sel');$('edu').style.display='block';$('next').disabled=false};$('opts').appendChild(d)});if(ans[step])$('edu').style.display='block'}
 function profile(){let txt=ans.map(a=>a.text).join(' ').toLowerCase();if(txt.includes('agência')||txt.includes('posts genéricos')||txt.includes('marketing virar consulta')||txt.includes('frustração'))return{t:'Marketing que não vira consulta',p:'Você parece ter presença digital ou histórico de investimento, mas a jornada ainda não transforma atenção em pacientes particulares suficientes.',d:'Entrega sem retorno',de:'Estratégia mensurável',g:'Peças soltas'};if(txt.includes('preço')||txt.includes('whatsapp')||txt.includes('curiosos'))return{t:'Paciente frio demais no atendimento',p:'O principal vazamento pode estar na falta de educação antes do WhatsApp. O paciente chega inseguro, compara por preço e exige explicação do zero.',d:'Lead frio',de:'Paciente educado',g:'Educação prévia'};return{t:'Médico bom, mas invisível',p:'Você tem capacidade técnica, mas sua autoridade ainda não está sendo traduzida em procura real e previsível.',d:'Invisibilidade',de:'Agenda particular',g:'Jornada de confiança'}}
-function getCookie(name){
-  const cookies=document.cookie?document.cookie.split('; '):[];
-  for(const cookie of cookies){
-    const parts=cookie.split('=');
-    const key=parts.shift();
-    if(key===name)return decodeURIComponent(parts.join('='));
-  }
-  return '';
-}
-
-function getTrackingData(){
-  const params=new URLSearchParams(window.location.search);
-  return {
-    utm_source:params.get('utm_source')||'',
-    utm_medium:params.get('utm_medium')||'',
-    utm_campaign:params.get('utm_campaign')||'',
-    utm_content:params.get('utm_content')||'',
-    utm_term:params.get('utm_term')||'',
-    fbclid:params.get('fbclid')||'',
-    fbp:getCookie('_fbp'),
-    fbc:getCookie('_fbc'),
-    pagina:window.location.href,
-    referrer:document.referrer||'',
-    user_agent:navigator.userAgent||''
-  };
-}
-
-function createEventId(){
-  if(window.crypto&&crypto.randomUUID)return crypto.randomUUID();
-  return `lead_${Date.now()}_${Math.random().toString(16).slice(2)}`;
-}
-
-async function saveLead(payload){
-  const eventId=createEventId();
-
-  const response=await fetch(LEADS_ENDPOINT,{
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({
-      ...getTrackingData(),
-      ...payload,
-      event_id:eventId
-    })
-  });
-
-  const data=await response.json().catch(()=>null);
-
-  if(!response.ok||!data||!data.ok){
-    throw new Error((data&&data.details)||(data&&data.error)||'Erro ao salvar lead');
-  }
-
-  if(typeof fbq==='function'){
-    fbq('track','Lead',{}, {eventID:eventId});
-  }
-
-  return data;
-}
-$('next').onclick=()=>{if(step<qs.length-1){step++;render()}else{$('intro').classList.add('hidden');$('lead').classList.remove('hidden');scrollTo(0,0)}};$('back').onclick=()=>{if(step>0){step--;render()}};$('leadForm').onsubmit=async e=>{e.preventDefault();let p=profile(),nome=$('nome').value,whats=$('whats').value,esp=$('esp').value,cidade=$('cidade').value;let btn=$('submitLead');btn.disabled=true;btn.textContent='Salvando diagnóstico...';let payload={nome,whats,especialidade:esp,cidade,resultado:p.t,dor:p.d,desejo:p.de,gargalo:p.g,respostaFinal:ans[9].text,origem:'Diagnóstico Cevora',respostas:ans.map((a,i)=>`P${i+1}: ${a.text}`).join(' | ')};try{
-  await saveLead(payload);
-}catch(error){
-  console.error(error);
-  alert('Não conseguimos salvar seu diagnóstico agora. Tente novamente em alguns segundos.');
-  btn.disabled=false;
-  btn.textContent='Liberar diagnóstico e PDF';
-  return;
-}
-$('lead').classList.add('hidden');$('result').style.display='block';$('rt').textContent=p.t;$('rp').textContent=p.p;$('dor').textContent=p.d;$('desejo').textContent=p.de;$('gargalo').textContent=p.g;$('resumo').innerHTML=`<b>${nome}</b><br>${esp} · ${cidade}<br>WhatsApp: ${whats}<br><br>Resposta final: ${ans[9].text}`;let msg=encodeURIComponent(`Olá, vim pelo Diagnóstico de Aquisição Médica da Cevora. Quero marcar uma chamada rápida de 10 minutos para avaliar a jornada de pacientes da minha clínica.
-
-Nome: ${nome}
-Especialidade: ${esp}
-Cidade: ${cidade}
-Resultado: ${p.t}`);$('zap').href=`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;if(YOUTUBE_EMBED_URL){$('yt').src=YOUTUBE_EMBED_URL;$('yt').style.display='block';$('placeholder').style.display='none'}scrollTo(0,0)};render();
+function getCookie(name){const cookies=document.cookie?document.cookie.split('; '):[];for(const cookie of cookies){const parts=cookie.split('=');const key=parts.shift();if(key===name)return decodeURIComponent(parts.join('='))}return ''}
+function getTrackingData(){const params=new URLSearchParams(window.location.search);return{utm_source:params.get('utm_source')||'',utm_medium:params.get('utm_medium')||'',utm_campaign:params.get('utm_campaign')||'',utm_content:params.get('utm_content')||'',utm_term:params.get('utm_term')||'',fbclid:params.get('fbclid')||'',fbp:getCookie('_fbp'),fbc:getCookie('_fbc'),pagina:window.location.href,referrer:document.referrer||'',user_agent:navigator.userAgent||''}}
+function createEventId(){if(window.crypto&&crypto.randomUUID)return crypto.randomUUID();return `lead_${Date.now()}_${Math.random().toString(16).slice(2)}`}
+async function saveLead(payload){const eventId=createEventId();const response=await fetch(LEADS_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...getTrackingData(),...payload,event_id:eventId})});const data=await response.json().catch(()=>null);if(!response.ok||!data||!data.ok){throw new Error((data&&data.details)||(data&&data.error)||'Erro ao salvar lead')}if(typeof fbq==='function'){fbq('track','Lead',{}, {eventID:eventId})}return data}
+$('whats').addEventListener('input',e=>{e.target.value=formatPhone(e.target.value);setPhoneError(false)});
+$('whats').addEventListener('blur',e=>{const digits=onlyDigits(e.target.value);if(digits&&!isValidPhoneDigits(digits))setPhoneError(true)});
+$('next').onclick=()=>{if(step<qs.length-1){step++;render()}else{$('intro').classList.add('hidden');$('lead').classList.remove('hidden');scrollTo(0,0)}};
+$('back').onclick=()=>{if(step>0){step--;render()}};
+$('leadForm').onsubmit=async e=>{e.preventDefault();let p=profile(),nome=$('nome').value.trim(),whatsMasked=$('whats').value.trim(),whatsDigits=onlyDigits(whatsMasked),esp=$('esp').value.trim(),cidade=$('cidade').value.trim();let btn=$('submitLead');if(!isValidPhoneDigits(whatsDigits)){setPhoneError(true);$('whats').focus();return}setPhoneError(false);btn.disabled=true;btn.textContent='Salvando diagnóstico...';let payload={nome,whats:whatsDigits,whatsapp:whatsDigits,especialidade:esp,cidade,resultado:p.t,dor:p.d,desejo:p.de,gargalo:p.g,respostaFinal:ans[9].text,origem:'Diagnóstico Cevora',respostas:ans.map((a,i)=>`P${i+1}: ${a.text}`).join(' | ')};try{await saveLead(payload)}catch(error){console.error(error);alert('Não conseguimos salvar seu diagnóstico agora. Tente novamente em alguns segundos.');btn.disabled=false;btn.textContent='Liberar diagnóstico e PDF';return}$('lead').classList.add('hidden');$('result').style.display='block';$('rt').textContent=p.t;$('rp').textContent=p.p;$('dor').textContent=p.d;$('desejo').textContent=p.de;$('gargalo').textContent=p.g;$('resumo').innerHTML=`<b>${nome}</b><br>${esp} · ${cidade}<br>WhatsApp: ${formatPhone(whatsDigits)}<br><br>Resposta final: ${ans[9].text}`;let msg=encodeURIComponent(`Olá, vim pelo Diagnóstico de Aquisição Médica da Cevora. Quero marcar uma chamada rápida de 10 minutos para avaliar a jornada de pacientes da minha clínica.\n\nNome: ${nome}\nEspecialidade: ${esp}\nCidade: ${cidade}\nResultado: ${p.t}`);$('zap').href=`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;if(YOUTUBE_EMBED_URL){$('yt').src=YOUTUBE_EMBED_URL;$('yt').style.display='block';$('placeholder').style.display='none'}scrollTo(0,0)};
+render();
 </script>
 </body>
 </html>
