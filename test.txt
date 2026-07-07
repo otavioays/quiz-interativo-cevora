@@ -1,1 +1,3 @@
-ok
+function test() {
+  return 'ok';
+}
