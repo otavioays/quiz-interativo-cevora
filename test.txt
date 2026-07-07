@@ -1,1 +1,2 @@
-hello
+function h(){return 'ok'}
+export { h as handler };
